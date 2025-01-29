@@ -12,7 +12,7 @@ if (fs.existsSync("config.env"))
   require("dotenv").config({ path: "./config.env" })
 
 // Özel Fonksiyonlarımız
-function convertToBool(text, fault = "true") {
+function convertToBool(text, fault = "fals") {
   return text === fault ? true : false
 }
 
